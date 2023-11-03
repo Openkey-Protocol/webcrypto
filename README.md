@@ -1,11 +1,6 @@
-# @peculiar/webcrypto
+# @openkey/webcrypto
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/PeculiarVentures/webcrypto/master/LICENSE.md)
-![test](https://github.com/PeculiarVentures/webcrypto/workflows/test/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/PeculiarVentures/webcrypto/badge.svg?branch=master)](https://coveralls.io/github/PeculiarVentures/webcrypto?branch=master)
-[![npm version](https://badge.fury.io/js/%40peculiar%2Fwebcrypto.svg)](https://badge.fury.io/js/%40peculiar%2Fwebcrypto)
-
-We wanted to be able to write Javascript that used crypto on both the client and the server but we did not want to rely on Javascript implementations of crypto. The only native cryptography available in browser is [Web Crypto](http://caniuse.com/#search=cryptography), this resulted in us creating a `@peculiar/webcrypto`.
+We wanted to be able to write Javascript that used crypto on both the client and the server but we did not want to rely on Javascript implementations of crypto. The only native cryptography available in browser is [Web Crypto](http://caniuse.com/#search=cryptography), which resulted in us creating a `@openkey/webcrypto`.
 
 ## Table Of Contents
 
@@ -25,7 +20,7 @@ We wanted to be able to write Javascript that used crypto on both the client and
 ## Installing
 
 ```
-npm install @peculiar/webcrypto
+npm install @openkey/webcrypto
 ```
 
 ## Supported algorithms
@@ -61,7 +56,7 @@ npm install @peculiar/webcrypto
 <sup>1</sup> Mechanism supports extended list of named curves `P-256`, `P-384`, `P-521`, `K-256`, 
 `brainpoolP160r1`, `brainpoolP160t1`, `brainpoolP192r1`, `brainpoolP192t1`, `brainpoolP224r1`, `brainpoolP224t1`, `brainpoolP256r1`, `brainpoolP256t1`, `brainpoolP320r1`, `brainpoolP320t1`, `brainpoolP384r1`, `brainpoolP384t1`, `brainpoolP512r1`, and `brainpoolP512t1`
 
-<sup>2</sup> Mechanism is not defined by the WebCrypto specifications. Use of mechanism in a safe way is hard, it was added for the purpose of enabling interoperability with an existing system. We recommend against its use unless needed for interoperability.
+<sup>2</sup> Mechanism is not defined by the WebCrypto specifications. The use of mechanism in a safe way is hard, it was added for the purpose of enabling interoperability with an existing system. We recommend against its use unless needed for interoperability.
 
 <sup>3</sup> Mechanism supports extended list of named curves `Ed25519`, and `Ed448`
 
@@ -70,7 +65,7 @@ npm install @peculiar/webcrypto
 ## Using
 
 ```javascript
-const { Crypto } = require("@peculiar/webcrypto");
+const { Crypto } = require("@openkey/webcrypto");
 
 const crypto = new Crypto();
 ```
@@ -80,10 +75,4 @@ const crypto = new Crypto();
 See [WebCrypto Docs](https://github.com/PeculiarVentures/webcrypto-docs/blob/master/README.md) for examples
 
 ## Bug Reporting
-Please report bugs either as pull requests or as issues in the issue tracker. `@peculiar/webcrypto` has a full disclosure vulnerability policy. Please do NOT attempt to report any security vulnerability in this code privately to anybody.
-
-
-## Related
- - [node-webcrypto-ossl](https://github.com/PeculiarVentures/node-webcrypto-ossl)
- - [node-webcrypto-p11](https://github.com/PeculiarVentures/node-webcrypto-p11)
- - [webcrypto-liner](https://github.com/PeculiarVentures/webcrypto-liner)
+Please report bugs either as pull requests or as issues in the issue tracker. `@openkey/webcrypto` has a full disclosure vulnerability policy. Please do NOT attempt to report any security vulnerability in this code privately to anybody.
