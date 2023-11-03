@@ -1,5 +1,5 @@
 {
-  "name": "@peculiar/webcrypto",
+  "name": "@openkey/webcrypto",
   "version": "1.4.3",
   "description": "A WebCrypto Polyfill for NodeJS",
   "repository": {
@@ -43,10 +43,7 @@
     "shake128",
     "shake256"
   ],
-  "author": "PeculiarVentures",
-  "contributors": [
-    "Miroshin Stepan<microshine@mail.ru>"
-  ],
+  "author": "Openkey",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PeculiarVentures/webcrypto/issues"
